@@ -1,6 +1,9 @@
+-- Borra y crea la base de datos
 DROP DATABASE IF EXISTS game;
 CREATE DATABASE game;
 USE game;
+
+-- Tablas
 CREATE TABLE Game (
 	GameID INTEGER PRIMARY KEY NOT NULL, 
 	points INTEGER NOT NULL,
@@ -39,3 +42,23 @@ CREATE TABLE Participation (
 	FOREIGN KEY (Game) REFERENCES Game(GameID)
 )ENGINE = InnoDB;
 
+
+USE game;
+
+-- Datos de prueba
+-- Jugadores
+INSERT INTO Player (username, password) VALUES ('klp', 'klp');
+INSERT INTO Player (username, password) VALUES ('rival3', '1234');
+INSERT INTO Player (username, password) VALUES ('rival4', '1234');
+
+-- Partidas
+INSERT INTO Game (GameID, points, fecha, time, duration, winner)
+VALUES 
+  (1, 120, '2024-01-01', '12:00', 10.5, 'klp'),
+  (2, 180, '2024-01-02', '15:30', 8, 'klp');
+
+-- Participaciones
+INSERT INTO Participation (Player, Game) VALUES ('klp', 1);
+INSERT INTO Participation (Player, Game) VALUES ('klp', 2);
+INSERT INTO Participation (Player, Game) VALUES ('rival3', 1);
+INSERT INTO Participation (Player, Game) VALUES ('rival4', 2);
