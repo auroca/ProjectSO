@@ -1,7 +1,7 @@
 -- Borra y crea la base de datos
-DROP DATABASE IF EXISTS game;
-CREATE DATABASE game;
-USE game;
+DROP DATABASE IF EXISTS M1_game;
+CREATE DATABASE M1_game;
+USE M1_game;
 
 -- Tablas
 CREATE TABLE Game (
@@ -43,7 +43,7 @@ CREATE TABLE Participation (
 )ENGINE = InnoDB;
 
 
-USE game;
+USE M1_game;
 
 -- Datos de prueba
 -- Jugadores
