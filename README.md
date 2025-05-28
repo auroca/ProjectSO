@@ -1,5 +1,6 @@
 TRIVIA GAME
 Aurora Calderón, Alyssa Delben, Arnau Cepero
+Video: https://youtu.be/k2Nw00tWRCU
 
 Version #1
 Uploaded by Aurora Calderón, revised by Arnau Cepero and communicated by Alyssa Delben
